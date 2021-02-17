@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: darkgray;
+    background-color: #EFEFEF;
     margin: 0px;
 }
 
@@ -15,8 +15,14 @@ html {
     background-color: #121212;
     text-align: center;
     color: #ffffff;
-    font-size:25px;
+    font-size:50px;
+    height: 100px;
     padding:20px;
+}
+.logo{
+    width:100px;
+    height:80px; 
+    padding-top:0px;
 }
 
 .navi{
@@ -28,7 +34,7 @@ html {
     top: 0;
     overflow: hidden;
 }
-
+ 
 .navi a{
     float:left; 
     color:white;
@@ -46,31 +52,47 @@ html {
 
 .row{
     display: flex;
-    flex-wrap: wrap;
-    background-color: #b2ced3;
+    flex-wrap: wrap; 
+    background-color: #CAEBF2;
     margin: 8px 0;
     justify-content: center;
     align-items: center;
 }
-
-.box{
-    background-color: white;
-    display: flex;
-    margin:15px;
-    padding: 8px;
- }
-.image{
-    margin:5px;
-    padding: 15px;
+ .row_head{
+    display:block;
+    background-color:white;
+    color:black;
+    margin:2px;
+   text-align
+   : center;
 }
 
+.box{
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    margin:15px;
+    padding: 8px;
+    /* width: 400px;
+    height: 200px; */
+ }
+ .box:hover{
+    transform: scale(1.2,1.2);   
+ }
+ 
 .img{
     width: 33.33%;
     float: left;
     height: auto;
 }
+
 footer{
     background-color: #16130d;
+    display: flex;
+    
+    align-items: center;
     height:75px;
     padding:10px;
     
@@ -85,5 +107,8 @@ footer a{
 @media screen and (max-width: 700px) {
     .navi {   
       flex-direction: column;
+    }
+    .img{
+        width: 100%;
     }
 }
