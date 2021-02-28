@@ -7,7 +7,7 @@
   <title>Index</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style2.css" />
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- jQuery library -->
@@ -24,24 +24,38 @@
     <img class="logo" style="float:left"; src="viplogo-nobg.png" alt="logo">
     <h1>VIP WORLD</h1>
   </div>
+
   <div class="navi">
     <nav class="">
+     <ul id="menu">
       <a href="index.html" target="_self">HOME</a>
       <a href="#">Search</a>
       <a href="#">Cart</a>
       <a style="float:right" ; href="#">Contact Us</a>
       <a style="float: right" href="login.html" target="_blank">Log in</a>
       <a style="float: right" href="signup.html" target="_blank">Sign up</a>
+    </ul>
+    <span  onclick="myFunction()" class="toggler">
+      &#9776;
+    </span>
     </nav>
   </div>
 
 
   <div class="row_head"><h1>Refrigerator</h1></div>
   <div class="row">
-    <div class="box"><img src="elcimg.png" alt="electronic items"></div>
-    <div class="box"><img src="electronics.jpg" alt="electronic items"></div>
-    <div class="box"><img src="fridge1.jpg" alt="electronic items"></div>
-    <div class="box"><img src="fridge2.jpg" alt="electronic items"></div>
+    <div class="box">
+      <img src="elcimg.png" alt="electronic items">
+    </div>
+    <div class="box">
+      <img src="electronics.jpg" alt="electronic items">
+    </div>
+    <div class="box">
+      <img src="fridge1.jpg" alt="electronic items">
+    </div>
+    <div class="box">
+      <img src="fridge2.jpg" alt="electronic items">
+    </div>
   </div>
 
 
@@ -67,6 +81,16 @@
     <a href="#">Copyright</a>
   </footer>
 
+  <script>
+    function myFunction(){
+      var x=document.getElemenById("menu");
+      if(x.style.display=="block"){
+        x.style.display="none";
+      }
+      else{
+        x.style.display="block";
+      }
+    }
+  </script>
 </body>
-
 </html>
