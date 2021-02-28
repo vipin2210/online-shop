@@ -12,12 +12,13 @@ html {
     scroll-behavior: smooth;
 }
 .header {
-    background-color: #121212;
+    background-color: #1C2833 ;;
     text-align: center;
     color: #ffffff;
     font-size:50px;
     height: 100px;
     padding:20px;
+    width: 100%;
 }
 .logo{
     width:100px;
@@ -26,13 +27,14 @@ html {
 }
 
 .navi{
-    background-color: #6495ed;
+    background-color: #3498DB ;
     display: flex;
     flex-wrap: wrap;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     overflow: hidden;
+    width: 100%;
 }
  
 .navi a{
@@ -50,10 +52,19 @@ html {
     color:#9eb9eb;
 }
 
+.toggler{
+        margin: 10px 10px;
+        font-size: 28px;
+        cursor: pointer;
+        display: none;
+        text-align: right;
+}
 .row{
     display: flex;
-    flex-wrap: wrap; 
-    background-color: #CAEBF2;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%; 
+    background-color: #D6EAF8;
     margin: 8px 0;
     justify-content: center;
     align-items: center;
@@ -63,8 +74,7 @@ html {
     background-color:white;
     color:black;
     margin:2px;
-   text-align
-   : center;
+   text-align: center;
 }
 
 .box{
@@ -74,13 +84,12 @@ html {
     justify-content: center;
     align-items: center;
     margin:15px;
-    padding: 8px;
-    /* width: 400px;
-    height: 200px; */
- }
- .box:hover{
+    padding: 8px; 
+}
+
+.box:hover{
     transform: scale(1.2,1.2);   
- }
+}
  
 .img{
     width: 33.33%;
@@ -91,7 +100,7 @@ html {
 footer{
     background-color: #16130d;
     display: flex;
-    
+    width: 100%;
     align-items: center;
     height:75px;
     padding:10px;
@@ -104,11 +113,23 @@ footer a{
     float: left;
     color: white;
 }
-@media screen and (max-width: 700px) {
+@media only screen and (max-width: 767px) {
     .navi {   
       flex-direction: column;
     }
-    .img{
+    .navi a{
+        display: none;
+    }
+   .box img{
         width: 100%;
+    }
+    .toggler{
+        display: block;
+    }
+    .navi ui li{
+        display: block;
+    }
+    ui{
+        display: none;
     }
 }
